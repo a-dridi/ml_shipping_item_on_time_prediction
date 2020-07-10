@@ -6,11 +6,11 @@ This is a Python desktop application coded with Qt framework which uses the pack
 This application allows you to save information about shipped product items which are used to predict, if the next shipping will be delivered on time. 
 
 
-Video of this application
+Video of this application:
 https://youtu.be/kSjgF9Og2KA
 
 
-![Screenshot of Application](https://raw.githubusercontent.com/a-dridi/ml_shipping_item_on_time_prediction/master/img/screenshot.PNG)
+![Screenshot of Application](https://raw.githubusercontent.com/a-dridi/ml_shipping_item_on_time_prediction/master/screenshot.PNG)
 
 ## Features
 You can save the product item name, quantitiy, duration and if it did get on time. 
