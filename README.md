@@ -1,11 +1,18 @@
-#Shipping Duration Prediction - Machine Learning: Python Example Application
+# Shipping Duration Prediction - Machine Learning: Python Example/Test Application
+
+* Production versions of this application are also available upon request.
 
 This is a Python desktop application coded with Qt framework which uses the packge Scikit-Learn. This is an machine learning example application in Python.
 This application allows you to save information about shipped product items which are used to predict, if the next shipping will be delivered on time. 
 
+
+Video of this application
+https://youtu.be/kSjgF9Og2KA
+
+
 ![Screenshot of Application](https://raw.githubusercontent.com/a-dridi/ml_shipping_item_on_time_prediction/master/img/screenshot.PNG)
 
-##Features
+## Features
 You can save the product item name, quantitiy, duration and if it did get on time. 
 Creates prediction if the next shipping will be delivered on time. The accuracy improves through amount of available information about the shipped product items. 
 Displays the accuracy of the prediction

@@ -90,7 +90,7 @@ border-radius: 5px;</string>
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>181</width>
+       <width>221</width>
        <height>31</height>
       </rect>
      </property>
@@ -105,13 +105,13 @@ border: 2px none rgb(121, 0, 181);
 border-radius: 0px;</string>
      </property>
      <property name="text">
-      <string>Prediction of &quot;On Time&quot;: </string>
+      <string>Prediction of latest &quot;On Time&quot;: </string>
      </property>
     </widget>
     <widget class="QLabel" name="predictionValue">
      <property name="geometry">
       <rect>
-       <x>200</x>
+       <x>240</x>
        <y>10</y>
        <width>51</width>
        <height>31</height>
@@ -128,7 +128,7 @@ border: 2px none rgb(121, 0, 181);
 border-radius: 0px;</string>
      </property>
      <property name="text">
-      <string> </string>
+      <string/>
      </property>
     </widget>
     <widget class="QLabel" name="accuracyValue">
@@ -430,6 +430,52 @@ padding: 4px;</string>
      </property>
      <property name="text">
       <string>Delivered On Time</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="predictOntimeButton">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>100</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 226, 61);
+color: black</string>
+     </property>
+     <property name="text">
+      <string>Predict</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="createPredictionDisplay">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>100</y>
+       <width>321</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:white;
+border: 2px none rgb(121, 0, 181);
+border-radius: 0px;
+padding-left: 5px;</string>
+     </property>
+     <property name="text">
+      <string>Prediction of latest &quot;On Time&quot;: </string>
      </property>
     </widget>
    </widget>

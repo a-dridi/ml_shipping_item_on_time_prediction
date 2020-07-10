@@ -43,7 +43,7 @@ class Ui_MainWindow(object):
         self.containerHeader.setFrameShadow(QtWidgets.QFrame.Raised)
         self.containerHeader.setObjectName("containerHeader")
         self.predictionTitle = QtWidgets.QLabel(self.containerHeader)
-        self.predictionTitle.setGeometry(QtCore.QRect(10, 10, 181, 31))
+        self.predictionTitle.setGeometry(QtCore.QRect(10, 10, 221, 31))
         font = QtGui.QFont()
         font.setPointSize(12)
         self.predictionTitle.setFont(font)
@@ -52,13 +52,14 @@ class Ui_MainWindow(object):
 "border-radius: 0px;")
         self.predictionTitle.setObjectName("predictionTitle")
         self.predictionValue = QtWidgets.QLabel(self.containerHeader)
-        self.predictionValue.setGeometry(QtCore.QRect(200, 10, 51, 31))
+        self.predictionValue.setGeometry(QtCore.QRect(240, 10, 51, 31))
         font = QtGui.QFont()
         font.setPointSize(12)
         self.predictionValue.setFont(font)
         self.predictionValue.setStyleSheet("background-color:white;\n"
 "border: 2px none rgb(121, 0, 181);\n"
 "border-radius: 0px;")
+        self.predictionValue.setText("")
         self.predictionValue.setObjectName("predictionValue")
         self.accuracyValue = QtWidgets.QLabel(self.containerHeader)
         self.accuracyValue.setGeometry(QtCore.QRect(640, 10, 71, 31))
@@ -175,6 +176,24 @@ class Ui_MainWindow(object):
 "border-radius: 0px;\n"
 "padding: 4px;")
         self.shippedItemOnTime.setObjectName("shippedItemOnTime")
+        self.predictOntimeButton = QtWidgets.QPushButton(self.frame_2)
+        self.predictOntimeButton.setGeometry(QtCore.QRect(180, 100, 111, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.predictOntimeButton.setFont(font)
+        self.predictOntimeButton.setStyleSheet("background-color: rgb(255, 226, 61);\n"
+"color: black")
+        self.predictOntimeButton.setObjectName("predictOntimeButton")
+        self.createPredictionDisplay = QtWidgets.QLabel(self.frame_2)
+        self.createPredictionDisplay.setGeometry(QtCore.QRect(320, 100, 321, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.createPredictionDisplay.setFont(font)
+        self.createPredictionDisplay.setStyleSheet("background-color:white;\n"
+"border: 2px none rgb(121, 0, 181);\n"
+"border-radius: 0px;\n"
+"padding-left: 5px;")
+        self.createPredictionDisplay.setObjectName("createPredictionDisplay")
         self.tableInfo = QtWidgets.QFrame(self.centralwidget)
         self.tableInfo.setGeometry(QtCore.QRect(20, 540, 791, 41))
         self.tableInfo.setStyleSheet("background-color:white;\n"
@@ -215,8 +234,7 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.apptitle.setText(_translate("MainWindow", "Prediction of Shipping Duration"))
-        self.predictionTitle.setText(_translate("MainWindow", "Prediction of \"On Time\": "))
-        self.predictionValue.setText(_translate("MainWindow", " "))
+        self.predictionTitle.setText(_translate("MainWindow", "Prediction of latest \"On Time\": "))
         self.accuracyTitle.setText(_translate("MainWindow", "Accuracy"))
         self.shippeditemNameTextview.setText(_translate("MainWindow", "Item Name:"))
         self.addShippingDurationButton.setText(_translate("MainWindow", "Add"))
@@ -224,6 +242,8 @@ class Ui_MainWindow(object):
         self.shippedItemOnTimeTextview.setText(_translate("MainWindow", "On Time:"))
         self.shippedItemDurationTextview.setText(_translate("MainWindow", "Duration:"))
         self.shippedItemOnTime.setText(_translate("MainWindow", "Delivered On Time"))
+        self.predictOntimeButton.setText(_translate("MainWindow", "Predict"))
+        self.createPredictionDisplay.setText(_translate("MainWindow", "Prediction of latest \"On Time\": "))
         self.tableInfoTextView.setText(_translate("MainWindow", "On Time: 0 = no | 1 = Yes"))
         self.infoButtonMainWindow.setText(_translate("MainWindow", "Info"))
 
